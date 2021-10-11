@@ -45,6 +45,7 @@ nav{
     display: none;
 }
 .nav__allMenu {
+    align-self: center;
     display: flex;
 }
 .nav__call {
@@ -81,7 +82,6 @@ nav{
     background-color: #F8F8F8;
 }
 button{
-    outline: none;
     border: none;
     background-color: white;
     padding: 0;

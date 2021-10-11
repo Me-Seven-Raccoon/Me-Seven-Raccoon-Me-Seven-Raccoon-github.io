@@ -38,10 +38,12 @@ nav{
     display: flex;
 }
 .nav__allMenu {
+    align-self: center;
     display: flex;
 }
 .nav__burger{
     margin: 0 16px 0 16px;
+    align-self: center;
 }
 .nav__logo {
     margin: 18px 0 18px 0;
@@ -72,7 +74,6 @@ nav{
     margin: 0 16px 0 0 ;
 }
 button{
-    outline: none;
     border: none;
     background-color: white;
     padding: 0;
@@ -105,8 +106,14 @@ menu {
 .main__menu {
     display: flex;
     list-style-type: none;
-    overflow-y: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     margin: 0;
+}
+.main__menu::-webkit-scrollbar  {
+    width: 0;
+    height: 0;
 }
 .main__menu__col:first-child button{
     border: 2px solid #B8FFEC;
