@@ -39,7 +39,6 @@ body{
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
 button{
-    outline: none;
     border: none;
     background-color: white;
     padding: 0;
@@ -106,6 +105,7 @@ nav{
 .dropdown__menu__button{
     transition: 1s;
 }
+.dropdown__menu__button:focus,
 .dropdown__menu__button:hover{
     color: rgba(126, 126, 130, 1);
     transition: 1s;
@@ -124,6 +124,7 @@ nav{
     opacity: 0;
     transition: 1s;
 }
+.dropdown__menu__button:focus::before,
 .dropdown__menu__button:hover::before{
     opacity: 1;
 }
@@ -134,6 +135,5 @@ nav{
     color: rgba(126, 126, 130, 1);
     opacity: 1;
 }
-
 
 
