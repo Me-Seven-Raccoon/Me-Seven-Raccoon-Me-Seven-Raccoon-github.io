@@ -27,3 +27,113 @@
     font-style: normal;
     font-display:swap;
 }
+body{
+    margin: 0px;
+    padding: 0px;
+    max-width: 320px;
+}
+.container{
+    padding-left: 24px;
+    max-width: 320px;
+    background: #FFFFFF;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+button{
+    outline: none;
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 0 0 0;
+}
+.nav__exit__logo{
+    display: flex;
+}
+.allMenu{
+    margin: 0 24px 0 0;
+}
+.nav__exit{
+    margin: 0 16px 0 0;
+}
+.main__menu__drop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.dropdown__menu__button{
+    font-size: 16px;
+    font-family: "TT Lakes";
+}
+.main__menu__dropdown{
+    margin: 32px 0 0 0;
+}
+.main__menu__dropdown:first-child {
+    margin: 50px 0 0 0;
+}
+.footer__button{
+    margin: 268px 0 0 0;
+}
+.footer__button button {
+    margin: 0 16px 0 0;
+}
+.footer__text{
+
+}
+.backMail{
+    margin: 16px 0 0 0;
+    font-family: "TT Lakes";
+    font-size: 16px;
+}
+.backPhone {
+    margin: 12px 0 0 0;
+    font-family: "TT Lakes";
+    font-size: 24px;
+}
+.footer__language {
+    padding: 40px 0 32px 0;
+}
+.footer__language button {
+    font-family: "TT Lakes";
+    font-size: 16px;
+    margin: 0 7px 0 0;
+}
+.dropdown__menu__button{
+    transition: 1s;
+}
+.dropdown__menu__button:hover{
+    color: rgba(126, 126, 130, 1);
+    transition: 1s;
+}
+.dropdown__menu__button::before{
+    position: absolute;
+    display: flex;
+    content: "";
+    width: 4px;
+    height: 32px;
+    background: rgba(65, 246, 215, 1);
+    text-align: center;
+    margin: -4px 0 0 -24px;
+    border-bottom-right-radius:5px;
+    border-top-right-radius: 5px;
+    opacity: 0;
+    transition: 1s;
+}
+.dropdown__menu__button:hover::before{
+    opacity: 1;
+}
+.footer__language button{
+    transition: 1s;
+}
+.footer__language button:hover {
+    color: rgba(126, 126, 130, 1);
+    opacity: 1;
+}
+
+
+
