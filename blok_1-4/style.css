@@ -27,12 +27,19 @@
     font-style: normal;
     font-display:swap;
 }
+html,
+body{
+    height: 100%;
+}
 body{
     margin: 0px;
     padding: 0px;
     max-width: 320px;
 }
 .container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     padding-left: 24px;
     max-width: 320px;
     background: #FFFFFF;
@@ -59,6 +66,9 @@ nav{
 .nav__exit{
     margin: 0 16px 0 0;
 }
+main {
+    flex:  1 1 auto;
+}
 .main__menu__drop {
     list-style-type: none;
     margin: 0;
@@ -75,21 +85,21 @@ nav{
 .main__menu__dropdown:first-child {
     margin: 50px 0 0 0;
 }
+footer{
+    margin: 32px 0 0 0;
+}
 .footer__button{
-    margin: 268px 0 0 0;
 }
 .footer__button button {
     margin: 0 16px 0 0;
 }
-.footer__text{
 
-}
-.backMail{
+.feedback__mail{
     margin: 16px 0 0 0;
     font-family: "TT Lakes";
     font-size: 16px;
 }
-.backPhone {
+.feedback__phone {
     margin: 12px 0 0 0;
     font-family: "TT Lakes";
     font-size: 24px;
@@ -131,9 +141,14 @@ nav{
 .footer__language button{
     transition: 1s;
 }
+.footer__language button:focus,
 .footer__language button:hover {
     color: rgba(126, 126, 130, 1);
     opacity: 1;
+}
+.footer__language button:hover,
+.dropdown__menu__button:hover {
+    cursor:pointer;
 }
 
 
